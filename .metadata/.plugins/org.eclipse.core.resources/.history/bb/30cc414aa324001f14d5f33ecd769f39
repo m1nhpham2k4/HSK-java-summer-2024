@@ -1,0 +1,12 @@
+package test;
+
+public class Test {
+	public static void main(String[] args) {
+		couter ct = new couter();
+		ct.increasment();
+		ct.increasment();
+		ct.reset();
+		System.out.println(ct.getValue());
+	}
+	
+}

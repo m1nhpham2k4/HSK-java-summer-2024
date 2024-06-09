@@ -1,0 +1,10 @@
+package Tuan1;
+import javax.swing.*;
+public class Main {
+	public static void main(String[] args) {
+		JFrame f = new JFrame();
+		f.setSize(500,500);
+		f.setLocale(null);
+		f.setVisible(true);
+	}
+}

@@ -1,0 +1,12 @@
+package test;
+
+import model.couterModel;
+
+public class main {
+	public static void main(String[] args) {
+		couterModel c = new couterModel();
+		c.decrease();
+		c.decrease();
+		System.out.println(c.getValue());
+	}
+}

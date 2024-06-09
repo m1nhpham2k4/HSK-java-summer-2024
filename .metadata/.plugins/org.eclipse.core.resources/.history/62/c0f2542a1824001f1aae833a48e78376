@@ -1,0 +1,42 @@
+package view;
+
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class flowLayout extends JFrame{
+	public flowLayout(){
+		this.setTitle("Minh dep trai");
+		this.setSize(600,400);
+//		 Can giua
+		this.setLocationRelativeTo(null);
+		
+		FlowLayout flowlayout = new FlowLayout();
+		BorderLayout b = new BorderLayout();
+		
+		this.setLayout(b);
+		
+		JButton j1 = new JButton("1");
+		JButton j3 = new JButton("3");
+		JButton j2 = new JButton("2");
+		
+		// add thanh phan
+		this.add(j1);
+		this.add(j2);
+		this.add(j3);
+		
+		
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setVisible(true);
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		new flowLayout();
+		
+	}
+}

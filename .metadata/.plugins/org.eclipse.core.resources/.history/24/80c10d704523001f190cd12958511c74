@@ -1,0 +1,10 @@
+package Tuan1;
+import javax.swing.*;
+public class Main {
+	public static void main(String [] args) {
+		JFrame f = new JFrame();
+		f.setVisible(true);
+		f.setTitle(Minh Dep Trai);
+		f.setSize(200,200);
+	}
+}

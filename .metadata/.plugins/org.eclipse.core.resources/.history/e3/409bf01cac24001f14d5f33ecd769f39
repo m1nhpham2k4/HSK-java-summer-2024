@@ -1,0 +1,46 @@
+package view;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+import model.couterModel;
+
+public class couterView extends JFrame{
+	private couterModel ctModel;
+	private JButton jButton_up;
+	private JButton jButton_down;
+	private JButton jButton_reset;
+	private JLabel jLabel_value;
+	
+	public couterView() {
+		this.ctModel = new couterModel();
+		this.init();
+		this.setVisible(true);
+	}
+	
+	public void init() {
+		this.setTitle("Couter");
+		this.setSize(300,300);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
+		
+		
+		jButton_up = new JButton("Up");
+		jButton_down = new JButton("Down");
+		jButton_reset = new JButton("Reset");
+		
+		JPanel jPanel = new JPanel();
+		jPanel.setLayout(new BorderLayout());
+		jPanel.add(jButton_down, BorderLayout.WEST);
+		jPanel.add(jButton_up, BorderLayout.EAST);
+		jPanel.add(jButton_reset, BorderLayout.SOUTH);
+		
+		this.setLayout(new BorderLayout());
+		
+	}
+	
+}	

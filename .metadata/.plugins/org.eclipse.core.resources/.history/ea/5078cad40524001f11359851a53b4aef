@@ -1,0 +1,17 @@
+package view;
+
+import javax.swing.JFrame;
+
+public class flowLayout extends JFrame{
+	public flowLayout(){
+		this.setTitle("Minh dep trai");
+		this.setSize(600,400);
+		this.setLocationRelativeTo(null);
+		this.setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new flowLayout();
+		
+	}
+}
