@@ -96,10 +96,10 @@ public class ptbac2View extends JFrame{
 		String a = String.valueOf(jtextfield_value_a.getText());
 		String b = String.valueOf(jtextfield_value_b.getText());
 		String c = String.valueOf(jtextfield_value_c.getText());
-		this.ptbac2Model.setValue_a(a);
-		this.ptbac2Model.setValue_b(b);
-		this.ptbac2Model.setValue_c(c);
-		this.ptbac2Model.giaiphuongtrinhbac2();
+		ptbac2Model.setValue_a(a);
+		ptbac2Model.setValue_b(b);
+		ptbac2Model.setValue_c(c);
+		ptbac2Model.giaiphuongtrinhbac2();
 		this.jtextfield_answer.setText(ptbac2Model.getAnswer());
 		
 	}
@@ -108,10 +108,10 @@ public class ptbac2View extends JFrame{
 		String a = String.valueOf(jtextfield_value_a.getText());
 		String b = String.valueOf(jtextfield_value_b.getText());
 		String c = String.valueOf(jtextfield_value_c.getText());
-		this.ptbac2Model.setValue_a(a);
-		this.ptbac2Model.setValue_b(b);
-		this.ptbac2Model.setValue_c(c);
-		this.ptbac2Model.xoa();
+		ptbac2Model.setValue_a(a);
+		ptbac2Model.setValue_b(b);
+		ptbac2Model.setValue_c(c);
+		ptbac2Model.xoa();
 		this.jtextfield_value_a.setText(ptbac2Model.getValue_a());
 		this.jtextfield_value_b.setText(ptbac2Model.getValue_b());
 		this.jtextfield_value_c.setText(ptbac2Model.getValue_c());
