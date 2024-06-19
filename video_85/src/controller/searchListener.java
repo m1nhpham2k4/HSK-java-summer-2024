@@ -9,7 +9,6 @@ public class searchListener implements ActionListener{
 	 private SearchView searchview;
 	 
 	public searchListener(SearchView searchview) {
-		super();
 		this.searchview = searchview;
 	}
 
